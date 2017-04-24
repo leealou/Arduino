@@ -4,8 +4,8 @@ void setup() {
   pinMode(13, OUTPUT);
 }
 //Declarations
-  int num;
-  int data = 5;
+ int num;
+ int data = 5;
 void loop() {
   // put your main code here, to run repeatedly:
   if (Serial.available() > 0)
