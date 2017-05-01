@@ -1,3 +1,4 @@
+//const int pinTemp = A0 (I'm not sure if this might be needed or not...)
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
