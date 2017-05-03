@@ -10,7 +10,7 @@ void loop() {
   value = ((((5.0 * analogRead(0) / 1024) * 100.0);
   Serial.print("Celcius: ");
   Serial.println(value);
-  Serial.("Farenheit: ");
-  Serial.println((value * 1.8) + 32);
+  //Serial.("Farenheit: ");
+  //Serial.println((value * 1.8) + 32);
   delay(1000);
 }
