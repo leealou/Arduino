@@ -1,16 +1,18 @@
-//const int pinTemp = A0 (I'm not sure if this might be needed or not...)
+float tempC;
+float reading;
+float tempPin = 0;
+
 void setup() {
   // put your setup code here, to run once:
+  analogReference(INTERNAL);
   Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  float value; 
-  value = ((((5.0 * analogRead(0) / 1024) * 100.0);
-  Serial.print("Celcius: ");
-  Serial.println(value);
-  //Serial.("Farenheit: ");
-  //Serial.println((value * 1.8) + 32);
+  reading = analogRead(tempPin);
+  tempC = 1.1 * reading / 1024 * 100;
+  Serial.print("Farenheit: ");
+  Serial.println(tempC);
   delay(1000);
 }
